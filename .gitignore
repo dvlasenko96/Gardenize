@@ -1,0 +1,11 @@
+node_modules
+public
+.tmp
+.sass-cache
+.idea
+client/bower_components
+dist
+/server/config/local.env.js
+npm-debug.log
+server/mongodb
+server/mongodb-osx-x86_64-3.0.5

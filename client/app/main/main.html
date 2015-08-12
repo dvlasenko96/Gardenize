@@ -1,0 +1,46 @@
+<div ng-include="'components/navbar/navbar.html'"></div>
+
+<header class="hero-unit" id="banner">
+    <div class="container">
+        <h1>Gardenize</h1>
+    </div>
+</header>
+
+
+<div class="container">
+    <div class="col-md-12">
+        <div class="row margin-top-10">
+            <button type="button"
+                    class="btn btn-default"
+                    ng-model="vm.filter"
+                    data-html="1"
+                    data-multiple="0"
+                    data-animation="am-flip-x"
+                    data-ng-change="changeFilter();"
+                    placeholder="Please select the filter"
+                    bs-options="filter as filter.name for filter in vm.quesionFilters"
+                    bs-select>
+              Action
+              <span class="caret"></span>
+            </button>
+        </div>
+        <div class="row margin-top-10">
+            <div class="list-group">
+              <a data-ui-sref="questions({id: question._id})" class="list-group-item" ng-repeat="question in questions track by question._id">
+                <span data-ng-bind="question.title"></span>
+                <span class="badge"
+                      data-ng-bind="question.answersCount"
+                      data-ng-class="{'badge-success': (question.answered == true)}"></span>
+              </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <p>Dmitrij Vlasenko |
+        <a href="mailto:dvlasenko96@gmail.com">dvlasenko96@gmail.com</a>
+    </div>
+</footer>
