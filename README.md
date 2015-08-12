@@ -5,10 +5,9 @@ The base Q&A application.
 
 You'll need a few additional gems
 
+* Mongo
 * npm
 * Bower
-* Grunt
-* Mongo
 
 ### Run project
 
