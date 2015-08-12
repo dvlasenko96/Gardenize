@@ -9,7 +9,8 @@ angular.module('postTaskApp', [
 		'ui.bootstrap',
 		'cgNotify',
 		'mgcrea.ngStrap',
-		'textAngular'
+		'textAngular',
+		'ngAnimate'
 	])
 	.config(function($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
 		$urlRouterProvider
