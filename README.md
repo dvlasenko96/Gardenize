@@ -13,7 +13,10 @@ You'll need a few additional gems
 ### Run project
 
 	$ mongod
-	$ cd ./server
+	$ cd path/to/project
+	$ npm install
+	$ bower install
+	$ cd server
 	$ node app.js
 	
 
